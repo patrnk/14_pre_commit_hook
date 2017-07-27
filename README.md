@@ -25,14 +25,14 @@ python tests.py
 
 The included `pre-commit` file can only be run on Unix.
 
-The included `pre-commit` script aborts the commit if any of the tests fail. To activate it, copy the file `precommit` into `.git/hooks` directory of the project. To bypass the activated script, run `git commit --no-verify`.
+The included `pre-commit` script aborts the commit if any of the tests fail. To activate it, copy the file `pre-commit` into `.git/hooks` directory of the project. To bypass the activated script, run `git commit --no-verify`.
 
 Depending on your [git config](https://stackoverflow.com/questions/23667859/why-is-git-clone-changing-file-permissions), you might want to make the `pre-commit` file executable:
 ```
 $ chmod +x pre-commit
 ```
 
-It is important that `python` command runs Python 3. Thus, don't forget to activate your virtual environment.
+It is important to make sure that `python` command runs Python 3. Thus, don't forget to activate your virtual environment.
 
 # Project Goals
 
